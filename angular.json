@@ -10,16 +10,18 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/oamenipentruoameni",
+            "outputPath": {
+              "base": "dist/oamenipentruoameni"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
             "polyfills": [],
             "tsConfig": "tsconfig.json",
             "assets": [],
             "styles": ["src/styles.css"],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -27,7 +29,6 @@
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
-              "vendorChunk": false,
               "budgets": [
                 {
                   "type": "initial",
@@ -39,7 +40,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "options": {
             "browserTarget": "oamenipentruoameni:build"
           }
