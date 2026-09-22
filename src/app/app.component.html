@@ -1,0 +1,109 @@
+<div class="page-shell">
+  <header class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Susținere pentru comunitate</span>
+      <h1>{{ title }}</h1>
+      <p>Oameni pentru Oameni sprijină familii și copii cu resurse, activități sociale și voluntariat dedicat.</p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#get-involved">Implică-te</a>
+        <a class="button secondary" href="#impact">Vezi impactul</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <strong>1.200+</strong>
+          <span>oameni ajutați</span>
+        </div>
+        <div>
+          <strong>48</strong>
+          <span>programe active</span>
+        </div>
+        <div>
+          <strong>85</strong>
+          <span>voluntari în rețea</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="highlight-card">
+        <p class="highlight-label">Program curent</p>
+        <h2>Sprijin educațional</h2>
+        <p>Oferim rechizite, ateliere și mentorat pentru copii din zonele rurale cu resurse limitate.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="impact-section" id="impact">
+      <div class="section-heading">
+        <p class="eyebrow">Impact real</p>
+        <h2>Ce facem zi de zi</h2>
+      </div>
+      <div class="impact-grid">
+        <article>
+          <h3>Donații transparente</h3>
+          <p>Fiecare sprijin financiar se transformă în pachete, burse și cursuri pentru comunitățile vulnerabile.</p>
+        </article>
+        <article>
+          <h3>Acțiuni locale</h3>
+          <p>Organizăm caravane sociale și sesiuni de intervenție rapidă pentru familii expuse riscului.</p>
+        </article>
+        <article>
+          <h3>Educație și formare</h3>
+          <p>Investim în abilități practice și proiecte educaționale care deschid noi șanse.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="people-section">
+      <div class="section-heading">
+        <p class="eyebrow">Echipe</p>
+        <h2>Itinerarii & voluntari</h2>
+      </div>
+      <div class="people-grid">
+        <div class="person-card" *ngFor="let p of itineraries">
+          <img [src]="p.image" [alt]="p.name" />
+          <div class="person-info">
+            <h3>{{ p.name }}</h3>
+            <p class="role">{{ p.role }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div>
+        <h2>Despre noi</h2>
+        <p>Suntem o echipă de coordonatori, voluntari și susținători care cred că fiecare om merită acces la sprijin respectuos și eficient.</p>
+      </div>
+      <div class="about-list">
+        <div>
+          <h3>Misiunea</h3>
+          <p>Să aducem sprijin imediat și soluții sustenabile pentru oameni aflați în dificultate.</p>
+        </div>
+        <div>
+          <h3>Valori</h3>
+          <p>Respect, transparență, acțiune și comunitate în centrul fiecărei decizii.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="get-involved">
+      <div class="cta-card">
+        <h2>Implică-te acum</h2>
+        <p>Fie că donezi, donezi timp sau distribui cauza noastră, fiecare gest face diferența.</p>
+        <div class="cta-buttons">
+          <a class="button primary" href="#">Donează</a>
+          <a class="button secondary" href="#">Voluntariat</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Oameni pentru Oameni</p>
+    <p>Construim un viitor mai bun pentru fiecare comunitate.</p>
+  </footer>
+</div>
